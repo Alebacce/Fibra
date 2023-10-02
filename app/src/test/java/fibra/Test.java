@@ -1,4 +1,4 @@
-package app.src.test.java.fibra;
+package fibra;
 
 public @interface Test {
 
