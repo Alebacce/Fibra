@@ -6,9 +6,5 @@ package fibra;
 class AppTest {
     @Test void appHasAGreeting() {
         FibraWebApplication classUnderTest = new FibraWebApplication();
-        assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
-    }
-
-    private void assertNotNull(String greeting, String string) {
     }
 }

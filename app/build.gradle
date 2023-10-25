@@ -13,6 +13,12 @@ plugins {
     id 'application'
 }
 
+apply plugin: 'io.spring.dependency-management'
+
+group = 'it.fibra'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '17'
+
 repositories {
     // Use Maven Central for resolving dependencies.
     mavenCentral()
@@ -32,7 +38,7 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClass = 'los_piratas_do_futbol.App'
+    mainClass = 'fibra.App'
 }
 
 tasks.named('test') {

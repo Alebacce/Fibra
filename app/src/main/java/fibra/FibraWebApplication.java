@@ -4,14 +4,16 @@
 
 package fibra;
 
-public class FibraWebApplication {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+
+// import org.springframework.boot.SpringApplication;
+// import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class FibraWebApplication {
     public static void main(String[] args) {
         try {
-            System.out.println(new FibraWebApplication().getGreeting());
             System.out.println("Ciao sono l'app della F.I.B.RA!! 🏴‍☠️");    
         } catch (Exception e) {
             System.err.println(e.getMessage() + e.getCause());
